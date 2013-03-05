@@ -1,0 +1,23 @@
+<html>
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for ('static', filename = 'style.css')}}">
+</head>
+<title>Students Details</title>
+<div class=metanav>
+<p><a href="/">Home</a></p>
+</div> 
+<body>
+
+<h1><center>STUDENTS  DETAILS</center></h1>
+<h2>Enter Student Details:</h2>
+
+<form action="/details" method="POST">
+Student Name:<input type="text" name="studentname" /><br>
+Sex:         <input type="text" name="sex" /><br>
+Age:         <input type="text" name="age" /><br>
+Total Mark:  <input type="text" name="mark" /><br>
+<input type="submit" value="Add Student"/><input type="reset" />
+</form>
+</body>
+</html>
+        	   

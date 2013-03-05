@@ -1,0 +1,15 @@
+<!doctype html>
+<link rel=stylesheet type=text/css href="{{ url_for ('static', filename = 'style.css')}}">
+<div class=metanav>
+<p><a href="/">Home</a></p>
+</div>
+<h1>STUDENTS DETAILS</h1>
+{% block body %}
+  <ul class=entries>
+  {% for entry in entries %}
+    <li>{{ entry.name }} {{entry.age|safe}} {{entry.sex|safe}} {{entry.mark|safe}}
+  {% else %}
+    <li><em><center>Unbelievable.  No entries here so fa...!r</em></center>
+  {% endfor %}
+  </ul>
+{% endblock %}

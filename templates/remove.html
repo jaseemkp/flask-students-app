@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Student Details</title>
+<link rel=stylesheet type=text/css href="{{ url_for ('static', filename = 'style.css')}}">
+</head>
+<div class=metanav>
+                           <p><a href="/">Home</a></p>
+			   </div>
+<body>
+<h1>STUDENT DETAILS</h1>
+<h2>Remove Student Details:</h2>
+<form action='/remove' method="POST">	
+<div> Student Name <input type="text" name = "remove" ></input></div>
+<div><input type="submit" value="Enter"></div>
+</form>		
+</body>
+</html>
